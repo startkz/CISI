@@ -84,7 +84,8 @@ def retrieve_shapely(osm_path,geoType,keyCol,**valConstraint):
     else:
         print("WARNING: No features or No Memory. returning empty GeoDataFrame") 
         return geopandas.GeoDataFrame(columns=['osm_id','geometry'],crs={'init': 'epsg:4326'})
-    
+
+
 def retrieve(osm_path,geoType,keyCol,**valConstraint):
     """
     Function to extract specified geometry and keys/values from OpenStreetMap using pygeos
